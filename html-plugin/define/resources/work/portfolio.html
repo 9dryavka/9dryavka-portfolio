@@ -1,0 +1,61 @@
+<div class="slider" data-current-page="1">
+  <div class="page">
+    <p>HTML+CSS(SCSS)+JavaScript(jQuery)で開発した静的なウェブサイトです。</p>
+    <p>
+      素のHTML/CSS/JavaScriptのみではコード管理が複雑になるため、Viteを導入してセクション単位でjavascriptやHTMLファイルを分割して管理しています。
+    </p>
+    <img
+      src="/resources/work/portfolio/split-section.png"
+      alt="セクションごとにファイルを分割"
+      width="500"
+      height="300"
+    />
+  </div>
+  <div class="page">
+    <p>
+      UI部分のデータをJSONで管理し、JavaScriptから動的に生成する方式は管理しやすい一方で、
+      ビルド後のHTMLにコンテンツが存在しない構成になるため、
+      SEOや初期表示時のHTML構造を考慮しました。
+    </p>
+    <p>
+      そのため、表示されるHTMLを最終的なデータソースとして扱い、
+      datasetを利用してJavaScript側から必要な情報を取得する設計にしています。
+    </p>
+    <p>
+      一部のデータのみJSON管理する案も検討しましたが、
+      過去の経験からデータの二重管理は将来的な保守コストにつながると考え、
+      データソースを一本化しました。
+    </p>
+    <p>
+      ただし、構造データをすべてHTMLへ直接記述すると管理が複雑になるため、
+      Viteのhtml-pluginを利用し、 「定義はJSONで管理 → ビルド時にHTMLへ変換 →
+      画面側では生成済みHTMLを解析」 とすることで、SEOと保守性を両立しています。
+    </p>
+    <img
+      src="/resources/work/portfolio/system-structure.png"
+      alt="システム構造"
+      width="300"
+      height="200"
+    />
+  </div>
+  <div class="page">
+    <p>
+      静的ウェブサイトとして構築したため、バックエンドを含む複雑なシステム設計よりも、
+      インタラクションやアニメーション表現に注力することができました。
+    </p>
+    <p>
+      UIについては、長大なスクロール操作を前提としたウェブサイトを個人的に好まないため、
+      WebGLを利用し、Canvasをインターフェースの一部として活用することでUXの向上を図りました。
+    </p>
+    <p>
+      ナビゲーションを備えた固定ヘッダーによる一般的な構成も検討しましたが、
+      スクロール操作そのものを制限することで、ユーザーを意図したコンテンツ体験へ誘導できるという意図で、今回はナビゲーションを排除しました。
+    </p>
+    <img
+      src="/resources/work/portfolio/works-list.png"
+      alt="制作物一覧をWebGLで描画"
+      width="300"
+      height="200"
+    />
+  </div>
+</div>

@@ -1,0 +1,80 @@
+{
+  "id": "certification-skill-list",
+  "caption": "資格一覧",
+  "updatedAt": "2026-07-30",
+  "headerColumns": {
+    "title": {
+      "action": "sort",
+      "order": "desc",
+      "sortType": "string"
+    },
+    "date": {
+      "action": "sort",
+      "order": "desc",
+      "sortType": "date"
+    },
+    "tag": {
+      "action": "filter",
+      "filterType": "OR",
+      "values": ["国家資格", "民間資格"],
+      "selected": ["国家資格", "民間資格"]
+    }
+  },
+  "fieldName": {
+    "title": "資格名",
+    "date": "取得年",
+    "years": "概要",
+    "link": "公式リンク",
+    "tag": "タグ"
+  },
+  "list": [
+    {
+      "id": "fe",
+      "title": "基本情報技術者",
+      "date": "2023-06",
+      "description": "ITエンジニア向けの国家資格。業界的な常識を学ぶため、SES時代に最初に取得した資格。",
+      "link": "https://www.ipa.go.jp/shiken/kubun/fe.html",
+      "tag": ["国家資格"]
+    },
+    {
+      "id": "web-designer-basic",
+      "title": "Webデザイナー検定 ベーシック",
+      "date": "2023-12",
+      "description": "Webデザインに関する基礎知識を問う民間資格。業務でフロントエンド領域の仕事をすることになり、その勉強のために取得した資格。",
+      "link": "https://www.cgarts.or.jp/v1/kentei/about/web/third.html",
+      "tag": ["民間資格"]
+    },
+    {
+      "id": "web-design-skill-level2",
+      "title": "ウェブデザイン技能検定 2級",
+      "date": "2025-12",
+      "description": "Webデザイン分野の国家資格。業務を通してフロントエンド領域に興味を持ち、転職を見据えて取得した資格。",
+      "link": "https://www.webdesign.gr.jp/",
+      "tag": ["国家資格"]
+    },
+    {
+      "id": "aws-clf",
+      "title": "AWS Certified Cloud Practitioner",
+      "date": "2025-03",
+      "description": "AWS認定資格の入門レベル。自分でサービスを立ち上げる際にクラウドの知見があると便利だな、ということで取得した資格。",
+      "link": "https://aws.amazon.com/jp/certification/certified-cloud-practitioner/",
+      "tag": ["民間資格"]
+    },
+    {
+      "id": "aws-saa",
+      "title": "AWS Certified Solutions Architect - Associate",
+      "date": "2025-04",
+      "description": "AWS認定資格の中級レベル。クラウドプラクティショナー取得後、アーキテクチャ的な知見をさらに深めたかったので取得した資格。",
+      "link": "https://aws.amazon.com/jp/certification/certified-solutions-architect-associate/",
+      "tag": ["民間資格"]
+    },
+    {
+      "id": "aws-sap",
+      "title": "AWS Certified Solutions Architect - Professional",
+      "date": "2025-12",
+      "description": "AWS認定資格の上級レベル。アソシエートの試験に合格こそしたが個人的な手応えとしてはイマイチだったので、知識の定着も兼ねてプロフェッショナルまで取得した。",
+      "link": "https://aws.amazon.com/jp/certification/certified-solutions-architect-professional/",
+      "tag": ["民間資格"]
+    }
+  ]
+}

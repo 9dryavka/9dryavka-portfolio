@@ -1,0 +1,111 @@
+<div class="slider" data-current-page="1">
+  <div class="page">
+    <p>Next.jsで作成した個人ブログです。</p>
+    <img
+      src="/resources/work_blog.jpg"
+      alt="個人ブログトップ画面"
+      width="600"
+      height="400"
+    />
+  </div>
+  <div class="page">
+    <p>トップ画面からメニューを開き、各コンテンツごとのページに遷移します。</p>
+    <img
+      src="/resources/work/blog/menu.png"
+      alt="個人ブログメニュー画面"
+      width="600"
+      height="400"
+    />
+  </div>
+  <div class="page">
+    <p>
+      各コンテンツページには一覧表示と検索機能を設置。一覧表示は交差オブザーバーAPIで無限スクロールできる仕様になっています。
+    </p>
+    <img
+      src="/resources/work/blog/list.png"
+      alt="個人ブログ 記事一覧"
+      width="600"
+      height="400"
+    />
+    <img
+      src="/resources/work/blog/search.png"
+      alt="個人ブログ 記事検索結果"
+      width="600"
+      height="400"
+    />
+  </div>
+  <div class="page">
+    <p>
+      各コンテンツはInterceptingRoutesで実装しているため、一覧表示からクリックした場合と直リンクで表示した場合でレイアウトが異なります。
+    </p>
+    <img
+      src="/resources/work/blog/item.png"
+      alt="個人ブログ 記事表示（インターセプティングルーティングで一覧画面にオーバーレイ）"
+      width="600"
+      height="400"
+    />
+    <img
+      src="/resources/work/blog/item_direct.png"
+      alt="個人ブログ 記事表示（直リンク時）"
+      width="600"
+      height="400"
+    />
+  </div>
+  <div class="page">
+    <p>
+      また編集用にユーザー認証を実装しています。※ユーザーID+パスワードに加えて、認証にはAuthenticatorによるMFAを採用。
+    </p>
+    <img
+      src="/resources/work/blog/login.png"
+      alt="個人ブログ Cognitoによるログイン画面"
+      width="600"
+      height="400"
+    />
+    <img
+      src="/resources/work/blog/MFA.png"
+      alt="個人ブログ 2段階認証"
+      width="600"
+      height="400"
+    />
+  </div>
+  <div class="page">
+    <p>
+      編集画面は『一覧』『メタデータ』『コンテンツ』の3種が各コンテンツごとに用意されています。
+    </p>
+    <img
+      src="/resources/work/blog/edit_list.png"
+      alt="個人ブログ 編集画面一覧"
+      width="600"
+      height="400"
+    />
+    <img
+      src="/resources/work/blog/edit_metadata.png"
+      alt="個人ブログ メタデータ編集画面"
+      width="600"
+      height="400"
+    />
+    <img
+      src="/resources/work/blog/edit_main.png"
+      alt="個人ブログ メイン編集画面"
+      width="600"
+      height="400"
+    />
+  </div>
+  <div class="page">
+    <p>
+      権限ユーザーであれば編集画面から公開まで可能です。また不完全な状態で公開できないように公開前のバリデーション機能も実装しています。
+    </p>
+    <img
+      src="/resources/work/blog/edit_validation.png"
+      alt="個人ブログ 編集画面のバリデーション機能"
+      width="600"
+      height="400"
+    />
+    <img
+      src="/resources/work/blog/edit_publish.png"
+      alt="個人ブログ 編集画面のパブリッシュ機能"
+      width="600"
+      height="400"
+    />
+  </div>
+</div>

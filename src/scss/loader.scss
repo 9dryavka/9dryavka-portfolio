@@ -1,0 +1,109 @@
+#loading {
+  position: fixed;
+  inset: 0;
+  width: 100dvw;
+  height: 100dvh;
+  overflow: hidden;
+  inset: 0;
+  z-index: 9999;
+  transition: opacity 0.5s;
+
+  #loading-content {
+    position: relative;
+    height: 500dvh;
+
+    --space: #16213e;
+    --upper-sky: #2a5298;
+    --mid-sky: #5d9cec;
+    --sky: #87cefa;
+    --cloud: #dff4ff;
+    --ground: #6bbf59;
+
+    background: linear-gradient(
+      to bottom,
+      var(--space) 0%,
+      var(--upper-sky) 20%,
+      var(--mid-sky) 50%,
+      var(--sky) 75%,
+      var(--cloud) 99%,
+      var(--ground) 99%,
+      var(--ground) 100%
+    );
+  }
+  #rocket {
+    z-index: 9999;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+    display: inline-block;
+    img {
+      pointer-events: none;
+    }
+    transition:
+      transform 0.6s ease,
+      opacity 0.3s ease;
+  }
+  &.hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+#loading-title {
+  letter-spacing: clamp(0.15em, 2vw, 0.5em);
+  user-select: none;
+
+  opacity: 0;
+
+  color: white;
+
+  width: 100%;
+  height: 100%;
+
+  font-size: clamp(1.25rem, 7vw, 3rem);
+  transform: scaleX(0.9);
+  white-space: nowrap;
+  font-weight: 900;
+  line-height: 1;
+  text-align: center;
+
+  transition:
+    opacity 0.5s ease,
+    transform 0.8s ease;
+
+  span {
+    display: inline-block;
+
+    &.pop {
+      animation-name: pop-in;
+      animation-delay: var(--pop-delay);
+      animation-duration: var(--pop-duration);
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: both;
+    }
+  }
+
+  &.show {
+    opacity: 1;
+  }
+}
+
+#loading::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes pop-in {
+  0%,
+  100% {
+    transform: scale(1);
+    text-shadow: none;
+  }
+
+  50% {
+    transform: scale(3);
+    text-shadow:
+      0 0 10px #fff,
+      0 0 20px #fff;
+  }
+}

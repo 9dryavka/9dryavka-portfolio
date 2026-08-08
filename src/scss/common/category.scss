@@ -1,0 +1,62 @@
+@mixin category-label {
+  .category-label {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-right: 0.5rem;
+
+    padding: 0.45rem 0.9rem 0.45rem 0.9rem;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 9999px;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+
+    background: linear-gradient(180deg, #d6d6d6 0%, #bdbdbd 100%);
+    color: #757575;
+    opacity: 0.7;
+    box-shadow:
+      0 2px 8px rgba(239, 83, 80, 0.25),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+    transition:
+      background 0.2s,
+      box-shadow 0.2s,
+      transform 0.15s;
+
+    user-select: none;
+    color: #fff;
+    opacity: 1;
+    &.category-type-ai.selected {
+      background: linear-gradient(180deg, #7e57c2 0%, #5e35b1 100%);
+    }
+
+    &.category-type-programming-language.selected {
+      background: linear-gradient(180deg, #42a5f5 0%, #1e88e5 100%);
+    }
+
+    &.category-type-markup-styling.selected {
+      background: linear-gradient(180deg, #26c6da 0%, #00acc1 100%);
+    }
+
+    &.category-type-library-framework.selected {
+      background: linear-gradient(180deg, #5c6bc0 0%, #3949ab 100%);
+    }
+
+    &.category-type-infra.selected {
+      background: linear-gradient(180deg, #26a69a 0%, #00897b 100%);
+    }
+
+    &.category-type-database.selected {
+      background: linear-gradient(180deg, #66bb6a 0%, #43a047 100%);
+    }
+
+    &.category-type-tool.selected {
+      background: linear-gradient(180deg, #78909c 0%, #546e7a 100%);
+    }
+  }
+}

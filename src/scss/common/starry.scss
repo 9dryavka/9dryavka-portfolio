@@ -1,0 +1,74 @@
+.starry-sky {
+  position: relative;
+  height: 100dvh;
+
+  --star-opacity: 1;
+  --star-count: 150;
+
+  z-index: 0;
+
+  &--bright {
+    --star-opacity: 1;
+    --star-count: 200;
+  }
+  &--normal-bright {
+    --star-opacity: 0.6;
+    --star-count: 100;
+  }
+  &--normal {
+    --star-opacity: 0.3;
+    --star-count: 50;
+  }
+  &--dim {
+    --star-opacity: 0.1;
+    --star-count: 10;
+  }
+
+  .star {
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+    opacity: var(--star-opacity);
+    animation: twinkle 2s infinite ease-in-out;
+  }
+
+  &.shooting-stars {
+    --star-opacity: 1;
+
+    overflow: hidden;
+    z-index: 0;
+
+    .shooting-star {
+      position: absolute;
+      width: 100px;
+      height: 2px;
+      background: #ffffff;
+      transform: rotate(-45deg);
+      animation: shooting 2s linear forwards;
+    }
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: calc(var(--star-opacity) * 0.2);
+    transform: scale(1);
+  }
+  50% {
+    opacity: var(--star-opacity);
+    transform: scale(1.5);
+  }
+}
+
+@keyframes shooting {
+  from {
+    transform: translate(0, 0) rotate(-45deg);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate(-500px, 500px) rotate(-45deg);
+    opacity: 0;
+  }
+}

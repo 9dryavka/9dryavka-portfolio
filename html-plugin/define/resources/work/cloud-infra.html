@@ -1,0 +1,88 @@
+<div class="slider" data-current-page="1">
+  <div class="page">
+    <p>ブログ用のインフラをAWSで作成しました。</p>
+    <img
+      src="/resources/work_infra.png"
+      alt="個人ブログ インフラシステム構成図"
+      width="1920"
+      height="1080"
+    />
+  </div>
+  <div class="page">
+    <p>機能ごとに利用したサービスは下記です。</p>
+    <table>
+      <caption>
+        各機能ごとのサービスについて
+      </caption>
+      <thead>
+        <tr>
+          <th>機能</th>
+          <th>利用サービス</th>
+          <th>説明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ドメイン管理</td>
+          <td>Amazon Route 53</td>
+          <td>独自ドメインのDNS管理</td>
+        </tr>
+        <tr>
+          <td>SSL/TLS証明書</td>
+          <td>AWS Certificate Manager (ACM)</td>
+          <td>HTTPS証明書の管理</td>
+        </tr>
+        <tr>
+          <td>CDN配信</td>
+          <td>Amazon CloudFront</td>
+          <td>静的コンテンツの配信</td>
+        </tr>
+        <tr>
+          <td>Webアプリケーション保護</td>
+          <td>AWS WAF</td>
+          <td>Webアプリケーションへの不正アクセス対策</td>
+        </tr>
+        <tr>
+          <td>静的コンテンツ保存</td>
+          <td>Amazon S3</td>
+          <td>コンテンツJSON・画像などの保存</td>
+        </tr>
+        <tr>
+          <td>API公開</td>
+          <td>Amazon API Gateway</td>
+          <td>APIエンドポイントの公開・ルーティング</td>
+        </tr>
+        <tr>
+          <td>ユーザー認証</td>
+          <td>Amazon Cognito</td>
+          <td>編集ユーザーの認証・認可</td>
+        </tr>
+        <tr>
+          <td>サーバーレス処理</td>
+          <td>AWS Lambda</td>
+          <td>公開、検索、問い合わせなどの各種API処理</td>
+        </tr>
+        <tr>
+          <td>SSR</td>
+          <td>AWS Lambda（Next.js）</td>
+          <td>クライアント用のスタンドアローン</td>
+        </tr>
+        <tr>
+          <td>メタデータ管理</td>
+          <td>Amazon DynamoDB</td>
+          <td>メタデータ・ビューカウントの保存</td>
+        </tr>
+        <tr>
+          <td>メール送信</td>
+          <td>Amazon SES</td>
+          <td>問い合わせメールの送信</td>
+        </tr>
+        <tr>
+          <td>定期実行</td>
+          <td>Amazon EventBridge</td>
+          <td>夜間バッチ（Cron）の起動</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

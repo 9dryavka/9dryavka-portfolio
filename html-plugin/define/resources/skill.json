@@ -1,0 +1,591 @@
+{
+  "id": "skill-list",
+  "caption": "スキル一覧",
+  "updatedAt": "2026-07-30",
+  "headerColumns": {
+    "title": {
+      "action": "sort",
+      "order": "desc",
+      "sortType": "string"
+    },
+    "level": {
+      "action": "sort",
+      "order": "desc",
+      "sortType": "number"
+    },
+    "years": {
+      "action": "sort",
+      "order": "desc",
+      "sortType": "number"
+    },
+    "category": {
+      "action": "filter",
+      "filterType": "OR",
+      "values": [
+        "AI",
+        "プログラミング言語",
+        "マークアップ/スタイリング",
+        "ライブラリ/フレームワーク",
+        "インフラ",
+        "データベース",
+        "ツール"
+      ],
+      "selected": [
+        "AI",
+        "プログラミング言語",
+        "マークアップ/スタイリング",
+        "ライブラリ/フレームワーク",
+        "インフラ",
+        "データベース",
+        "ツール"
+      ]
+    },
+    "tag": {
+      "action": "filter",
+      "filterType": "OR",
+      "values": [
+        "実務経験あり",
+        "個人開発",
+        "フロントエンド",
+        "バックエンド",
+        "得意",
+        "忘れ気味",
+        "デザイン系",
+        "勉強中"
+      ],
+      "selected": [
+        "実務経験あり",
+        "個人開発",
+        "フロントエンド",
+        "バックエンド",
+        "得意",
+        "忘れ気味",
+        "デザイン系",
+        "勉強中"
+      ]
+    }
+  },
+  "fieldName": {
+    "title": "スキル名",
+    "level": "習熟度",
+    "years": "使用年数",
+    "workExperience": "実務経験年数",
+    "description": "概要",
+    "category": "カテゴリ",
+    "tag": "タグ"
+  },
+  "list": [
+    {
+      "id": "chat-gpt",
+      "title": "ChatGPT",
+      "level": 4,
+      "years": 3,
+      "workExperience": 3,
+      "description": "OpenAI Response APIと連携したシステムの開発経験あり。",
+      "category": "AI",
+      "tag": ["実務経験あり"]
+    },
+    {
+      "id": "claude",
+      "title": "Claude",
+      "level": 3,
+      "years": 1,
+      "workExperience": 1,
+      "description": "ClaudeCodeを利用した仕様駆動開発(SSD)の実務経験あり",
+      "category": "AI",
+      "tag": ["実務経験あり"]
+    },
+    {
+      "id": "github-copilot",
+      "title": "GitHub Copilot",
+      "level": 3,
+      "years": 2,
+      "workExperience": 2,
+      "description": "『IDE上でのコード補完』に利用",
+      "category": "AI",
+      "tag": ["実務経験あり"]
+    },
+    {
+      "id": "react",
+      "title": "React",
+      "level": 5,
+      "years": 4,
+      "workExperience": 3,
+      "description": "Next.js前提の知識。設計段階からのWebアプリケーション開発の実務経験あり。",
+      "category": "ライブラリ/フレームワーク",
+      "tag": ["実務経験あり", "フロントエンド"]
+    },
+    {
+      "id": "nextjs",
+      "title": "Next.js",
+      "level": 5,
+      "years": 4,
+      "workExperience": 3,
+      "description": "各種hooksを用いた大規模アプリケーションの設計→テスト実装までの実務経験あり。",
+      "category": "ライブラリ/フレームワーク",
+      "tag": ["実務経験あり", "フロントエンド", "得意"]
+    },
+    {
+      "id": "vite",
+      "title": "Vite",
+      "level": 3,
+      "years": 0.3,
+      "description": "個人開発時にディレクトリ&ファイルの構造整理目的で利用。",
+      "category": "ライブラリ/フレームワーク",
+      "tag": ["勉強中", "個人開発"]
+    },
+    {
+      "id": "jquery",
+      "title": "jQuery",
+      "level": 3,
+      "years": 0.5,
+      "description": "jQueryで作成したウェブページを公開した経験あり",
+      "category": "ライブラリ/フレームワーク",
+      "tag": ["勉強中", "個人開発"]
+    },
+    {
+      "id": "tailwind-css",
+      "title": "Tailwind CSS",
+      "level": 5,
+      "years": 3,
+      "description": "実務での使用経験あり。",
+      "category": "ライブラリ/フレームワーク",
+      "tag": ["実務経験あり", "フロントエンド"]
+    },
+    {
+      "id": "spring-boot",
+      "title": "SpringBoot",
+      "level": 4,
+      "years": 3,
+      "description": "要件定義～実際の運用まで一人で対応できるレベル。MySQLやAWSサービスとの連携についての実務経験あり。マルチスレッドなど処理性能重視の実装も可能。",
+      "category": "ライブラリ/フレームワーク",
+      "tag": ["実務経験あり", "バックエンド"]
+    },
+    {
+      "id": "nodejs",
+      "title": "Node.js",
+      "level": 3,
+      "years": 3,
+      "description": "実務ではシステムの一部として利用。個人開発時にも必要に応じて利用。",
+      "category": "ライブラリ/フレームワーク",
+      "tag": ["実務経験あり", "バックエンド", "忘れ気味"]
+    },
+    {
+      "id": "express",
+      "title": "Express",
+      "level": 1,
+      "years": 3,
+      "description": "Reactアプリケーション開発時、ルーティング目的で利用したことがある",
+      "category": "ライブラリ/フレームワーク",
+      "tag": ["実務経験あり", "バックエンド", "忘れ気味"]
+    },
+    {
+      "id": "apache-nifi",
+      "title": "Apache NiFi",
+      "level": 4,
+      "years": 4,
+      "description": "設計を含む、実際のデータフロー構築まで可能。",
+      "category": "ライブラリ/フレームワーク",
+      "tag": ["実務経験あり"]
+    },
+    {
+      "id": "css",
+      "title": "CSS",
+      "level": 4,
+      "years": 6,
+      "workExperience": 3,
+      "description": "バニラCSSの使用は中学～大学まで。最近はSCSSやTailwind CSSを利用。",
+      "category": "マークアップ/スタイリング",
+      "tag": ["実務経験あり"]
+    },
+    {
+      "id": "scss",
+      "title": "SCSS",
+      "level": 4,
+      "years": 3,
+      "workExperience": 3,
+      "description": "実務経験は2年ほど。BEM記法を経験。",
+      "category": "マークアップ/スタイリング",
+      "tag": ["実務経験あり"]
+    },
+    {
+      "id": "html",
+      "title": "HTML",
+      "level": 4,
+      "years": 6,
+      "workExperience": 3,
+      "description": "セマンティックに基づいた記述が可能。",
+      "category": "マークアップ/スタイリング",
+      "tag": ["実務経験あり"]
+    },
+    {
+      "id": "mysql",
+      "title": "MySQL",
+      "level": 4,
+      "years": 5,
+      "workExperience": 4,
+      "description": "テーブル設計から実際の運用まで対応可能。",
+      "category": "データベース",
+      "tag": ["実務経験あり"]
+    },
+    {
+      "id": "dynamodb",
+      "title": "DynamoDB",
+      "level": 4,
+      "years": 2,
+      "description": "テーブル設計から実際の運用まで対応可能。",
+      "category": "データベース",
+      "tag": ["個人開発"]
+    },
+    {
+      "id": "docker",
+      "title": "Docker",
+      "level": 3,
+      "years": 3,
+      "workExperience": 1,
+      "description": "アプリケーションの立ち上げ～運用まで対応可能。",
+      "category": "インフラ",
+      "tag": ["実務経験あり"]
+    },
+    {
+      "id": "aws",
+      "title": "AWS",
+      "level": 4,
+      "years": 4,
+      "workExperience": 4,
+      "description": "実際に触ったことのあるサービスは下記",
+      "category": "インフラ",
+      "tag": ["実務経験あり"],
+      "children": [
+        {
+          "title": "DynamoDB",
+          "description": "個人ブログのDBに採用。",
+          "link": "https://aws.amazon.com/jp/dynamodb/"
+        },
+        {
+          "title": "S3",
+          "description": "個人ブログ&ポートフォリオサイトのリソース管理に利用。",
+          "link": "https://aws.amazon.com/jp/s3/"
+        },
+        {
+          "title": "Route 53",
+          "description": "個人ブログのドメイン管理に利用。",
+          "link": "https://aws.amazon.com/jp/route53/"
+        },
+        {
+          "title": "Lambda",
+          "description": "個人ブログのフロントエンド&バックエンドAPIに利用。",
+          "link": "https://aws.amazon.com/jp/lambda/"
+        },
+        {
+          "title": "AWS Certificate Manager (ACM)",
+          "description": "ドメインのセキュア化に利用。",
+          "link": "https://aws.amazon.com/jp/certificate-manager/"
+        },
+        {
+          "title": "AWS Billing and Cost Management",
+          "description": "個人ブログのコスト管理&アラートに利用。",
+          "link": "https://aws.amazon.com/jp/aws-cost-management/"
+        },
+        {
+          "title": "AWS SAM",
+          "description": "個人ブログのローカル開発用に利用。",
+          "link": "https://aws.amazon.com/jp/serverless/sam/"
+        },
+        {
+          "title": "IAM",
+          "description": "ユーザー管理に利用。",
+          "link": "https://aws.amazon.com/jp/iam/"
+        },
+        {
+          "title": "IAM Identity Center",
+          "description": "個人ブログの認証機能に利用。",
+          "link": "https://aws.amazon.com/jp/iam/identity-center/"
+        },
+        {
+          "title": "API Gateway",
+          "description": "個人ブログのバックエンドAPIに利用",
+          "link": "https://aws.amazon.com/jp/api-gateway/"
+        },
+        {
+          "title": "Cognito",
+          "description": "個人ブログの認証機能に利用。",
+          "link": "https://aws.amazon.com/jp/cognito/"
+        },
+        {
+          "title": "AWS Amplify",
+          "description": "個人ブログのフロントエンド開発時に利用",
+          "link": "https://aws.amazon.com/jp/amplify/"
+        },
+        {
+          "title": "Amazon SES",
+          "description": "個人ブログの問い合わせ機能&バッチ処理の通知機能用に利用",
+          "link": "https://aws.amazon.com/jp/ses/"
+        },
+        {
+          "title": "Amazon SQS",
+          "description": "個人ブログの問い合わせ機能に利用。その後、不要と判断して削除。",
+          "link": "https://aws.amazon.com/jp/sqs/"
+        },
+        {
+          "title": "Amazon EventBridge Scheduler",
+          "description": "個人ブログのバッチ処理に利用",
+          "link": "https://aws.amazon.com/jp/eventbridge/"
+        },
+        {
+          "title": "AWS CloudFormation",
+          "description": "個人ブログのフロントエンド&バックエンドのIaCに利用。※CloudFormation&S3バケットはWebUIで作成",
+          "link": "https://aws.amazon.com/jp/cloudformation/"
+        }
+      ]
+    },
+    {
+      "id": "java",
+      "title": "Java",
+      "level": 5,
+      "years": 7,
+      "workExperience": 3,
+      "description": "AWS SDKを用いた実装、MySQL接続、外部APIとの連携やマルチスレッド処理など、主にSpringBootを用いたRestAPIの開発に使用。",
+      "category": "プログラミング言語",
+      "tag": ["実務経験あり", "得意"]
+    },
+    {
+      "id": "groovy",
+      "title": "Groovy",
+      "level": 3,
+      "years": 4,
+      "workExperience": 4,
+      "description": "Groovyらしい記法を積極的に利用していたわけでなく、コンパイルを行わないスクリプトとして、あくまでもJavaベースでの経験のみ。",
+      "category": "プログラミング言語",
+      "tag": ["実務経験あり"]
+    },
+    {
+      "id": "java-script",
+      "title": "JavaScript",
+      "level": 4,
+      "years": 6,
+      "description": "『jQueryを用いたフロントエンド開発』や『バックエンドAPI開発』に利用。AWS SDKの使用経験あり。実務では主にTypeScriptを利用。",
+      "category": "プログラミング言語",
+      "tag": ["実務経験あり"]
+    },
+    {
+      "id": "type-script",
+      "title": "TypeScript",
+      "level": 5,
+      "years": 4,
+      "workExperience": 3,
+      "description": "主に『Next.jsを用いたウェブアプリケーションの開発』に利用。バックエンドでも時折利用。",
+      "category": "プログラミング言語",
+      "tag": ["実務経験あり", "得意"]
+    },
+    {
+      "id": "php",
+      "title": "PHP",
+      "level": 3,
+      "years": 2,
+      "workExperience": 1,
+      "description": "実務では主にリーディングのみ。大学時代のウェブアプリケーション開発時にはサーバー用に利用。",
+      "category": "プログラミング言語",
+      "tag": ["実務経験あり", "忘れ気味"]
+    },
+    {
+      "id": "c-language",
+      "title": "C",
+      "level": 3,
+      "years": 5,
+      "description": "学生時代の講義&個人ゲーム開発時に利用。",
+      "category": "プログラミング言語",
+      "tag": ["忘れ気味", "個人開発"]
+    },
+    {
+      "id": "c-sharp",
+      "title": "C#",
+      "level": 3,
+      "years": 1,
+      "description": "学生時代に個人ゲーム開発目的で利用。",
+      "category": "プログラミング言語",
+      "tag": ["忘れ気味", "個人開発"]
+    },
+    {
+      "id": "shell-script",
+      "title": "Shell Script",
+      "level": 3,
+      "years": 3,
+      "description": "CI/CDや開発効率化のためのスクリプト、ファイル操作やコマンドの自動化などに実務レベルで利用。",
+      "category": "プログラミング言語",
+      "tag": ["実務経験あり"]
+    },
+
+    {
+      "id": "github",
+      "title": "GitHub",
+      "level": 4,
+      "years": 6,
+      "workExperience": 4,
+      "description": "リポジトリの作成からCLIでの基本的な操作まで、基本的な操作が実務レベルで可能",
+      "category": "ツール",
+      "tag": ["実務経験あり", "個人開発"]
+    },
+    {
+      "id": "vs-code",
+      "title": "VS Code",
+      "level": 3,
+      "years": 5,
+      "workExperience": 3,
+      "description": "実務で使用経験あり。基本的な操作や設定が可能。",
+      "category": "ツール",
+      "tag": ["実務経験あり", "個人開発"]
+    },
+    {
+      "id": "intellij",
+      "title": "IntelliJ",
+      "level": 3,
+      "years": 5,
+      "workExperience": 4,
+      "description": "実務で使用経験あり。基本的な操作や設定が可能。",
+      "category": "ツール",
+      "tag": ["実務経験あり", "個人開発"]
+    },
+    {
+      "id": "visual-studio",
+      "title": "Visual Studio",
+      "level": 3,
+      "years": 3,
+      "description": "大学時代にC系の開発で使用。基本的な操作や設定が可能。",
+      "category": "ツール",
+      "tag": ["個人開発", "忘れ気味"]
+    },
+    {
+      "id": "eclipse",
+      "title": "Eclipse",
+      "level": 3,
+      "years": 3,
+      "description": "大学時代の開発で主に使用。基本的な操作や設定が可能。",
+      "category": "ツール",
+      "tag": ["忘れ気味", "個人開発"]
+    },
+    {
+      "id": "jira",
+      "title": "Jira",
+      "level": 3,
+      "years": 4,
+      "workExperience": 4,
+      "description": "実務＆個人開発時の進捗管理に使用",
+      "category": "ツール",
+      "tag": ["実務経験あり", "個人開発"]
+    },
+    {
+      "id": "screw-driver",
+      "title": "ScrewDriver",
+      "level": 3,
+      "years": 4,
+      "workExperience": 4,
+      "description": "yamlで実際にパイプラインを作成&運用したことがあるレベル。",
+      "category": "ツール",
+      "tag": ["実務経験あり"]
+    },
+    {
+      "id": "slack",
+      "title": "Slack",
+      "level": 3,
+      "years": 4,
+      "workExperience": 4,
+      "description": "SlackBotの導入やSDKなどからのAPI呼び出しなどの実装経験あり",
+      "category": "ツール",
+      "tag": ["実務経験あり"]
+    },
+    {
+      "id": "excel",
+      "title": "Excel",
+      "level": 3,
+      "years": 6,
+      "workExperience": 4,
+      "description": "関数レベルであれば業務効率化の一環として対応可能",
+      "category": "ツール",
+      "tag": ["実務経験あり"]
+    },
+    {
+      "id": "power-point",
+      "title": "PowerPoint",
+      "level": 3,
+      "years": 6,
+      "workExperience": 4,
+      "description": "スライドの作成ができるレベル。",
+      "category": "ツール",
+      "tag": ["実務経験あり"]
+    },
+    {
+      "id": "figma",
+      "title": "Figma",
+      "level": 3,
+      "years": 0.3,
+      "description": "最低限のワイヤーフレーム作成であれば可能",
+      "category": "ツール",
+      "tag": ["デザイン系", "個人開発"]
+    },
+    {
+      "id": "miro",
+      "title": "Miro",
+      "level": 3,
+      "years": 3,
+      "workExperience": 3,
+      "description": "最低限のワイヤーフレーム作成であれば可能",
+      "category": "ツール",
+      "tag": ["デザイン系", "実務経験あり"]
+    },
+    {
+      "id": "illustrator",
+      "title": "Illustrator",
+      "level": 2,
+      "years": 0.5,
+      "description": "基本的な操作は可能",
+      "category": "ツール",
+      "tag": ["デザイン系", "個人開発"]
+    },
+    {
+      "id": "photoshop",
+      "title": "Photoshop",
+      "level": 2,
+      "years": 0.5,
+      "description": "基本的な操作は可能",
+      "category": "ツール",
+      "tag": ["デザイン系", "個人開発"]
+    },
+    {
+      "id": "after-effects",
+      "title": "After Effects",
+      "level": 1,
+      "years": 0.1,
+      "description": "簡単なアニメーションであれば作成可能",
+      "category": "ツール",
+      "tag": ["デザイン系", "個人開発"]
+    },
+    {
+      "id": "clip-studio-paint",
+      "title": "Clip Studio Paint",
+      "level": 3,
+      "years": 4,
+      "description": "ラスター画像の作成であればAdobe系よりも操作に慣れているため、個人的にはこちらを利用。",
+      "category": "ツール",
+      "tag": ["デザイン系", "個人開発"]
+    },
+    {
+      "id": "blender",
+      "title": "Blender",
+      "level": 1,
+      "years": 0.1,
+      "description": "ウェブサイトのデザインとして3Dを使いたいと思い、現在学習中",
+      "category": "ツール",
+      "tag": ["デザイン系", "個人開発", "勉強中"]
+    },
+    {
+      "id": "wordpress",
+      "title": "WordPress",
+      "level": 1,
+      "years": 0.3,
+      "description": "GUI操作のみ利用。プラグインの作成などは未経験。",
+      "category": "ツール",
+      "tag": ["個人開発"]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "9dryavka-portfolio",
+  "version": "1.0.0",
+  "description": "9dryavka's portfolio",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "author": "9dryavka",
+  "dependencies": {
+    "jquery": "^4.0.0",
+    "linkedom": "^0.18.13",
+    "three": "^0.185.1"
+  },
+  "devDependencies": {
+    "sass": "^1.99.0",
+    "vite": "^6.4.3"
+  }
+}
